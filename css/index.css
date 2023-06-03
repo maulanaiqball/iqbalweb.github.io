@@ -1,0 +1,188 @@
+* {
+    background-color: #131312;
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+    color: #dcd6d2;
+}
+
+
+
+p {
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+a {
+    color: #dcd6d2;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #dcd6d2;
+}
+
+h3 {
+    font-size: 2.2rem;
+    font-family: 'Poltawski Nowy', serif;
+}
+
+h1 {
+    font-size: 4.7rem;
+    line-height: 1;
+    font-family: 'Poltawski Nowy', serif;
+}
+
+h4 {
+    font-family: 'Poltawski Nowy', serif;
+    line-height: 1;
+    font-size: 3.5rem;
+}
+
+h5 {
+    font-family: 'Poltawski Nowy', serif;
+    font-size: 3rem;
+}
+
+.btn {
+    color: #dcd6d2;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 40px;
+}
+
+hr {
+    border-width: 2px solid;
+    color: #dcd6d2;
+}
+
+.imgskill {
+    border-radius: 50%;
+}
+
+.navbar {
+    background-color: transparent;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    scroll-snap-type: x mandatory;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    display: flex;
+    scroll-behavior: smooth;
+}
+
+section {
+    padding: 100px;
+    flex: none;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    scroll-snap-align: start;
+}
+
+
+
+.circle {
+    padding: 100px;
+    width: 0px;
+    height: 0px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: rotateCircle 15s infinite linear;
+}
+
+.text {
+    font-family: 'Poltawski Nowy', serif;
+    font-size: 16px;
+    color: #dcd6d2;
+    position: absolute;
+}
+
+.text1 {
+    font-family: 'Poltawski Nowy', serif;
+    font-size: 16px;
+    color: #dcd6d2;
+    position: absolute;
+}
+
+.text span {
+    position: absolute;
+    top: -80px;
+    display: inline-block;
+    transform-origin: 0 80px;
+}
+
+
+@keyframes rotateCircle {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotateText {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+
+.sec {
+    width: 100%;
+    height: 85vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+/* Sembunyikan scrollbar dari Chrome, Safari dan Opera */
+.sec::-webkit-scrollbar {
+    display: none;
+}
+
+.scroll {
+    padding-left: 100px;
+}
+
+.techstack {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#about,
+#project,
+#skills,
+#contact {
+    scroll-snap-type: x mandatory;
+}
+
+#project:hover {
+    scroll-snap-type: x mandatory;
+}
+
+.globe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
