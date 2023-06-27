@@ -1,487 +1,530 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!--css_botstrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!--css_botstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <!--js_botstrap-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"></script>
+  <!--js_botstrap-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 
-    <!--css_link-->
-    <link rel="stylesheet" href="css/index.css">
+  <!--css_link-->
+  <link rel="stylesheet" href="css/index.css">
 
-    <!--js_link-->
-    <link rel="stylesheet" href="js/index.js">
+  <!--js_link-->
+  <link rel="stylesheet" href="js/index.js">
 
-    <!--font_link-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poltawski+Nowy&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <link rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <link rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,0,200" />
+  <!--font_link-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poltawski+Nowy&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,0,200" />
 
-    <title>Portofolio | Iqbal</title>
-  </head>
+  <title>Portofolio | Iqbal</title>
+</head>
 
 
-  <body>
-    <!-- Navbar_start -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
+<body>
+  <!-- Navbar_start -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
+    <div class="container">
+
+      <a class="navbar-brand" href="#">
+        <h2>IqBaLwEb</h2>
+      </a>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+
+        <div class="mx-auto"></div>
+
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link " href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#work">Work</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#contact">Contact</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+  <!--Navbar_end-->
+
+  <!---->
+  <div class="container-fluid content">
+
+    <!--slide_1-->
+    <section id="about">
+      <div class="container">
+        <h1>MAULANA MUHAMMAD IQBAL.</h1>
+
+        <div class="row">
+          <div class="col-7">
+            <img src="img/IQBALL.png" alt="">
+          </div>
+
+          <div class="col-5">
+            <p>/ Hello, I'm Maulana Muhammad Iqbal. Currently, I live in Malang, Indonesia, as a vocational high school
+              student majoring in software engineering.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+
+            <div class="circle">
+              <span class="text">ARROW-KEY-TO-EXPLORE*</span>
+            </div>
+
+            <script>
+              const text = document.querySelector('.text');
+              text.innerHTML = text.textContent.replace(/\S/g, "<span>$&</span>");
+
+              const element = document.querySelectorAll('span');
+              for (let i = 0; i < element.length; i++) {
+                element[i].style.transform = "rotate(" + i * 17 + "deg)"
+              }
+            </script>
+
+          </div>
+
+          <div class="col-6 pt-5">
+            <h3>NEWBIE FRONT-END DEVELOPER / CREATIVE DEVELOPER .</h3>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!--slide_2-->
+    <section id="work">
       <div class="container">
 
-        <a class="navbar-brand" href="#">
-          <h2>IqBaLwEb</h2>
-        </a>
+        <div class="sec pb-5">
 
-        <div class="collapse navbar-collapse" id="navbarNav">
-
-          <div class="mx-auto"></div>
-
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link " href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link " href="#work">Work</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link " href="#skills">Skills</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link " href="#contact">Contact</a>
-            </li>
-          </ul>
-
-        </div>
-      </div>
-    </nav>
-    <!--Navbar_end-->
-
-    <!---->
-    <div class="container-fluid content">
-      
-      <!--slide_1-->
-      <section id="about">
-        <div class="container">
-          <h1>MAULANA MUHAMMAD IQBAL.</h1>
-
-          <div class="row">
-            <div class="col-7">
-              <img src="img/IQBALL.png" alt="">
+          <div class="row pb-3 pt-3">
+            <div class="col-8">
+              <h1>
+                THE RESULTS OF MY WORK
+              </h1>
             </div>
+            <div class="col-4">
 
-            <div class="col-5">
-              <p>/ Hello, I'm Maulana Muhammad Iqbal. Currently, I live in Malang, Indonesia, as a vocational high school student majoring in software engineering.</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-6">
-
-              <div class="circle">
-                <span class="text">ARROW-KEY-TO-EXPLORE*</span>
-              </div>
-
-              <script>
-                const text = document.querySelector('.text');
-                text.innerHTML = text.textContent.replace(/\S/g, "<span>$&</span>");
-
-                const element = document.querySelectorAll('span');
-                for (let i = 0; i < element.length; i++) {
-                  element[i].style.transform = "rotate(" + i * 17 + "deg)"
-                }
-              </script>
-
-            </div>
-
-            <div class="col-6 pt-5">
-              <h3>NEWBIE FRONT-END DEVELOPER / CREATIVE DEVELOPER .</h3>
             </div>
           </div>
 
-        </div>
-      </section>
-
-      <!--slide_2-->
-      <section id="work">
-        <div class="container">
-
-          <div class="sec pb-5">
-
-            <div class="row pb-3 pt-3">
-              <div class="col-8">
-                <h1>
-                  THE RESULTS OF MY WORK 
-                </h1>
-              </div>
-              <div class="col-4">
-  
-              </div>
-            </div>
-            
-            <hr>
-
-            <div class="row pb-3 pt-3">
-              <div class="col-4">
-
-              </div>
-              <div class="col-4">
-                <h2 class="text-center">SOFTWARE</h2>
-              </div>
-              <div class="col-4">
-                
-              </div>
-            </div>
-
-            
-            
-            <div class="row pb-3 pt-3">
-              <div class="col-6">
-                <img src="img/kali.png" alt="">
-              </div>
-              <div class="col-6">
-                <h3>INSTALASI KALI LINUX</h3>
-                <p>/ Dengan keahlian dan pengetahuan yang saya miliki, saya mampu melakukan instalasi sistem operasi Kali Linux yang dirancang khusus untuk kebutuhan pentesting. Dengan Kali Linux, saya dapat melakukan pemindaian jaringan, dan penetrasi sistem. Kemampuan ini membantu melindungi data dan sistem dari serangan cyber.</p>
-              </div>
-            </div>
-
-            <hr>
-
-            <div class="row pb-3 pt-3">
-              <div class="col-6">
-                <h3>INSTALASI UBUNTU LINUX</h3>
-                <p>/ Saya mampu melakukan instalasi sistem operasi Ubuntu Linux, Dalam proses instalasi, saya dapat membantu mengkonfigurasi sistem sesuai dengan preferensi pengguna, termasuk pengaturan jaringan, partisi disk, pengguna, dan preferensi lainnya. </p>
-              </div>
-              <div class="col-6">
-                <img src="img/ubuntu.png" alt="">
-              </div>
-            </div>
-
-            <hr>
-
-            <div class="row pb-3 pt-3">
-              <div class="col-6">
-                <img src="img/abc.png" alt="">
-              </div>
-              <div class="col-6">
-                <h3>ABC BUDDY MOBILE</h3>
-                <p>/ game ini saya buat bertujuan untuk mengikuti Malang Young Innovators Award (MYIA) , latar belakang
-                  pembuatan game ini bertujuan untuk membantu anak penyandang Dyslexia dan meningkatkan kesadaran
-                  masyarakat terhadap anak Dyslexia, yang pada akhirnya mengurangi stigma bagi anak anak yang lambat
-                  membaca , game ini saya buat menggunakan bahasa Phyton (Memenangkan Juara 3).</p>
-              </div>
-            </div>
-
-            <hr>
-
-            <div class="row pb-3 pt-3">
-              <div class="col-6">
-                <h3>LOMBA KOPETENSI SISWA</h3>
-                <p>/ Saya telah mengikuti Lomba Kopetensi Siswa (LKS) tingkat Malang , diperlombaan ini berisi tentang
-                  algoritma Artificial Intelligence , dan saya cukup memahaminya , di perlombaan ini mengggunakan bahasa
-                  Phyton (Menduduki peringkat 4)</p>
-              </div>
-              <div class="col-6">
-                <img src="img/lks.png" alt="">
-              </div>
-            </div>
-
-            <hr>
-
-            <div class="row pb-3 pt-3">
-              <div class="col-6">
-                <img src="img/rpg.png" alt="">
-              </div>
-              <div class="col-6">
-                <h3>RPG ADVENTURE</h3>
-                <p>/ Game ini saya buat bertujuan untuk pelaksanaan pameran sekolah , game ini saya buat menggunakan
-                  SoftWare GODOT GAME ENGINE memakai bahasa C++</p>
-              </div>
-            </div>
-
-            <hr>
-
-            <div class="row pb-3 pt-3">
-              <div class="col-6">
-                <h3>MANAGEMENT BUKU</h3>
-                <p>/  Dengan pengetahuan tentang framework Laravel, saya dapat merancang dan membangun sistem manajemen buku yang efisien dan mudah digunakan. Sistem ini akan memungkinkan Anda untuk mengelola daftar buku, termasuk informasi seperti judul, pengarang,dan kategori. Saya dapat mengimplementasikan fitur-fitur seperti penambahan, pengeditan, dan penghapusan data buku. Selain itu, saya juga dapat menambahkan fitur lain seperti peminjaman,dan pengembalian.</p>
-              </div>
-              <div class="col-6">
-                <img src="img/management buku.png" alt="">
-              </div>
-            </div>
-
-            <hr>
-
-            <!--hard ware-->
-
-
-            <div class="row pb-5 pt-5">
-              <div class="col-4">
-
-              </div>
-              <div class="col-4">
-                <h2 class="text-center">HARDWARE</h2>
-              </div>
-              <div class="col-4">
-                
-              </div>
-            </div>
-
-            <div class="row pb-3 pt-3">
-              <div class="col-6">
-                <img src="img/laptopku.png" alt="">
-              </div>
-              <div class="col-6">
-                <h3>PENINGKATAN PERANGKAT KERAS</h3>
-                <p>/ Saya memiliki keahlian khusus dalam melakukan peningkatan perangkat keras pada laptop. Saya dapat membantu meningkatkan kinerja laptop dengan mengganti atau menambah komponen seperti RAM, penyimpanan .</p>
-              </div>
-            </div>
-
-            <hr>
-
-            <div class="row pb-3 pt-3">
-              <div class="col-6">
-                <h3>TROUBLESHOOTING LAPTOP</h3>
-                <p>/ Dalam melakukan troubleshooting, saya dapat mengidentifikasi dan memperbaiki masalah yang berkaitan dengan keyboard, touchpad, atau perangkat input lainnya. Saya dapat melakukan pemeriksaan menyeluruh terhadap perangkat keras dan perangkat lunak terkait, serta menerapkan solusi yang tepat untuk memulihkan fungsi input yang normal.</p>
-              </div>
-              <div class="col-6">
-                <img src="img/laptopbrili.png" alt="">
-              </div>
-            </div>
-
-            <hr>
-
-            <div class="row pb-3 pt-3">
-              <div class="col-6">
-                <img src="img/hpku.png" alt="">
-              </div>
-              <div class="col-6">
-                <h3>TROUBLESHOOTING HANDPHONE</h3>
-                <p>/ Dalam melakukan penggantian, saya dapat membongkar perangkat dengan hati-hati, memasang LCD yang baru, dan menghubungkannya dengan komponen lainnya. Saya memahami langkah-langkah teknis yang diperlukan dan mengikuti prosedur yang benar untuk memastikan penggantian LCD dilakukan dengan aman dan akurat.</p>
-              </div>
-            </div>
-
-            <hr>
-
-            <div class="row pb-3 pt-3">
-              <div class="col-6">
-                <h3>PEMELIHARAAN PERANGKAT KERAS</h3>
-                <p>/ Dalam hal ini, saya dapat melakukan tindakan preventif dan perawatan rutin pada komponen fisik laptop, termasuk membersihkan debu, memeriksa koneksi kabel, mengganti thermal paste, dan memastikan semua bagian berfungsi dengan baik.</p>
-              </div>
-              <div class="col-6">
-                <img src="img/kipas.png" alt="">
-              </div>
-            </div>
-
-            <hr>
-
-            <div class="row pb-3 pt-3">
-              <div class="col-6">
-                <img src="img/rakit pc.png" alt="">
-              </div>
-              <div class="col-6">
-                <h3>MERAKIT PC</h3>
-                <p>/ Dalam proses ini, saya dapat menggabungkan berbagai komponen perangkat keras, seperti motherboard, prosesor, RAM, kartu grafis, penyimpanan, dan lainnya, untuk membentuk sistem komputer yang berfungsi. Saya memahami koneksi dan pengaturan yang benar untuk setiap komponen, termasuk pemasangan kabel dan pendingin CPU. Selain itu, saya juga dapat melakukan konfigurasi awal BIOS dan instalasi sistem operasi.</p>
-              </div>
-            </div>
-
-            <hr>
-
-            <div class="row pb-3 pt-3">
-              <div class="col-6">
-                <h3>DUINO-COIN</h3>
-                <p>/ Duino Coin adalah kriptocurrency yang dikembangkan khusus untuk perangkat mikrokontroler seperti ESP8266. Dengan pengetahuan tentang pemrograman dan penggunaan ESP8266, saya dapat merancang dan membangun perangkat yang dapat melakukan penambangan (mining) Duino Coin. Saya dapat menghubungkan ESP8266 dengan jaringan Internet, mengonfigurasi dan memprogramnya untuk melakukan penambangan Duino Coin dengan menggunakan algoritma yang sesuai.</p>
-              </div>
-              <div class="col-6">
-                <img src="img/duinocoin.png" alt="">
-              </div>
-            </div>
-
-            <hr>
-
-            <div class="row pb-3 pt-3">
-              <div class="col-6">
-                <img src="img/repeater.png" alt="">
-              </div>
-              <div class="col-6">
-                <h3>REPEATER</h3>
-                <p>/ saya dapat merancang dan membangun perangkat yang berfungsi sebagai repeater atau penguat sinyal Wi-Fi. Dalam proses ini, saya dapat mengkonfigurasi ESP8266 untuk berfungsi sebagai titik akses (access point) yang menerima sinyal Wi-Fi dari router utama, lalu memperluas jangkauannya dengan mengirimkan kembali sinyal yang diperkuat ke perangkat lain di sekitarnya.</p>
-              </div>
-            </div>
-
-            <hr>
-
-            <div class="row pb-3 pt-3">
-              <div class="col-6">
-                <h3>RELAY V4.0 ESP01S</h3>
-                <p>/ Dengan pengetahuan tentang penggunaan dan pemrograman ESP01S, saya dapat merancang dan membangun sistem yang memanfaatkan modul Relay V4.0 untuk mengendalikan lampu dengan sinyal jarak jauh. Saya dapat menghubungkan ESP01S dengan jaringan Wi-Fi dan mengatur komunikasi dengan perangkat pengendali, seperti ponsel cerdas atau komputer, melalui aplikasi atau antarmuka yang sesuai.</p>
-              </div>
-              <div class="col-6">
-                <img src="img/relay (1).png" alt="">
-              </div>
-            </div>
-
-            <hr>
-
-            <div class="row pb-3 pt-3">
-              <div class="col-6">
-                <img src="img/rfidd.png" alt="">
-              </div>
-              <div class="col-6">
-                <h3>RFID-RC522</h3>
-                <p>/ Dengan pengetahuan tentang penggunaan dan pemrograman RFID-RC522, saya dapat merancang dan membangun sistem yang memanfaatkan modul RFID untuk mengendalikan lampu. Saya dapat mengintegrasikan RFID-RC522 dengan sistem pengendalian lampu yang sesuai, sehingga ketika kartu RFID yang terdaftar didekatkan, lampu dapat dinyalakan. Saya juga dapat melakukan konfigurasi dan pemrograman yang diperlukan untuk mengatur interaksi antara RFID-RC522, sistem kontrol, dan lampu. </p>
-              </div>
-            </div>
-
-            <hr>
-
-            <div class="row pb-3 pt-3">
-              <div class="col-6">
-                <h3>RJ45</h3>
-                <p>Dalam proses ini, saya dapat melakukan pemotongan, pengupasan, dan penjepitan kabel dengan presisi untuk menciptakan koneksi yang handal dan stabil. Saya juga memahami standar pengkabelan seperti T568A dan T568B untuk memastikan kesesuaian dengan infrastruktur jaringan yang ada.</p>
-              </div>
-              <div class="col-6">
-                <img src="img/rj45.png" alt="">
-              </div>
-            </div>
-
-            <hr>
-
-            <div class="row pb-3 pt-3">
-              <div class="col-6">
-                <img src="img/rasbery pi3.png" alt="">
-              </div>
-              <div class="col-6">
-                <h3>RASPBERRY PI 3B</h3>
-                <p>/ Saya dapat memprogram Raspberry Pi 3 untuk mengendalikan sinyal input dan output yang terhubung dengan flip flop, sehingga menciptakan fungsi penyimpanan data yang dapat digunakan dalam berbagai aplikasi elektronik.</p>
-              </div>
-            </div>
-
-            <!--btnn-->
-
-            <div class="row pt-5">
-              <div class="col-11"></div>
-              <div class="col-1">
-                <a href="#skills" class="text-decoration-none">
-                  <span class="material-symbols-outlined text-light">
-                    keyboard_double_arrow_right
-                  </span>
-                  <span class="material-symbols-outlined text-light">
-                    keyboard_double_arrow_right
-                  </span>
-                </a>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-      </section>
-
-      <!--slide_3-->
-      <section id="skills">
-        <div class="container">
-
-          <div class="row">
-            <div class="col-4 pt-5">
-              <h3>FRONT-END</h3>
-              <hr>
-              <p class="pb-5">HTML | CSS | BOOTSTRAP</p>
-
-              <h3>DATA-BASE</h3>
-              <hr>
-              <p class="pb-5">My SQL</p>
-
-              <h3>LANGUAGE</h3>
-              <hr>
-              <p class="pb-5">PHYTON | JAVA | JAVA SCRIPT | C++ | PHP</p>
-
-            </div>
-
-            <div class="col-4 text-center techstack d-block">
-              <img src="img/globee.png" alt="">
-              <h5>TECH STACK OR TOOLS</h5>
-            </div>
-
-            <div class="col-4 pt-5">
-              <h3>FRAMEWORKS</h3>
-              <hr>
-              <p class="pb-5">/ LARAVEL</p>
-
-              <h3>OS</h3>
-              <hr>
-              <p class="pb-5">/ LinUx Ubuntu .</p>
-
-              <h3>OTHER</h3>
-              <hr>
-              <p class="pb-5">AWS CLOUDE | ETHERIUM | DUINO-COIN | JUPYTER NOTEBOOKS | DATA SCIENCE</p>
-
-            </div>
-
-
-          </div>
-
-
-        </div>
-
-
-      </section>
-
-      <!--slide_4-->
-      <section id="contact">
-        <div class="container">
-          <h1>LET'S TALK ABOUT THE PROJECT?</h1>
           <hr>
 
-          <div class="row">
+          <div class="row pb-3 pt-3">
             <div class="col-4">
-              <h3 class="pb-4">WANNA SEE ME IN OTHER PLECES ?</h3>
-              <p><a href="https://www.instagram.com/iqbal_9q21l/">INSTAGRAM</a></p>
-              <hr>
-              <p><a href="#">TWITER</a></p>
-              <hr>
-              <p><a href="https://www.youtube.com/@emperorbijisalak7264">YOU TUBE</a></p>
-            </div>
 
-            <div class="col-4 globe">
-              <img src="img/globe.png" alt="">
             </div>
-
             <div class="col-4">
-              <h3 class="pb-4">DROP ME AN EMAIL</h3>
-              <hr>
-              <p><a href="">EMAIL : maulanaiqbal47758@gmail.com</a></p>
+              <h2 class="text-center">SOFTWARE</h2>
+            </div>
+            <div class="col-4">
+
+            </div>
+          </div>
 
 
-              <a href="CV-Iqballlll.pdf" download>
-                <button type="button" class="btn btn-dark" >
-                  Download CV
-                </button>
+
+          <div class="row pb-3 pt-3">
+            <div class="col-6">
+              <img src="img/kali.png" alt="">
+            </div>
+            <div class="col-6">
+              <h3>INSTALASI KALI LINUX</h3>
+              <p>/ Dengan keahlian dan pengetahuan yang saya miliki, saya mampu melakukan instalasi sistem operasi Kali
+                Linux yang dirancang khusus untuk kebutuhan pentesting. Dengan Kali Linux, saya dapat melakukan
+                pemindaian jaringan, dan penetrasi sistem. Kemampuan ini membantu melindungi data dan sistem dari
+                serangan cyber.</p>
+            </div>
+          </div>
+
+          <hr>
+
+          <div class="row pb-3 pt-3">
+            <div class="col-6">
+              <h3>INSTALASI UBUNTU LINUX</h3>
+              <p>/ Saya mampu melakukan instalasi sistem operasi Ubuntu Linux, Dalam proses instalasi, saya dapat
+                membantu mengkonfigurasi sistem sesuai dengan preferensi pengguna, termasuk pengaturan jaringan, partisi
+                disk, pengguna, dan preferensi lainnya. </p>
+            </div>
+            <div class="col-6">
+              <img src="img/ubuntu.png" alt="">
+            </div>
+          </div>
+
+          <hr>
+
+          <div class="row pb-3 pt-3">
+            <div class="col-6">
+              <img src="img/abc.png" alt="">
+            </div>
+            <div class="col-6">
+              <h3>ABC BUDDY MOBILE</h3>
+              <p>/ Saya menggunakan bahasa pemrograman C++ dalam pembuatan game ini. Dengan game ini, saya berhasil
+                memenangkan medali perunggu di MYIA. Game ini dirancang khusus untuk menawarkan pengalaman belajar yang
+                menyenangkan bagi anak-anak dengan Dyslexia. Melalui fitur-fitur khusus, game ini membantu meningkatkan
+                kemampuan membaca dan menawarkan metode pembelajaran yang adaptif.</p>
+            </div>
+          </div>
+
+          <hr>
+
+          <div class="row pb-3 pt-3">
+            <div class="col-6">
+              <h3>LOMBA KOPETENSI SISWA</h3>
+              <p>/ Saya telah mengikuti Lomba Kompetensi Siswa (LKS) tingkat Malang yang fokus pada algoritma Artificial
+                Intelligence. Dalam lomba tersebut, saya berhasil memahami konsep dan implementasi algoritma AI dengan
+                baik. Saya menggunakan bahasa pemrograman Python dalam mengikuti lomba ini.
+                Dalam persaingan yang ketat, saya berhasil menduduki peringkat keempat di antara peserta lainnya.
+                Melalui pengetahuan dan keahlian saya dalam pengembangan algoritma AI, saya mampu menyajikan solusi yang
+                efektif dan inovatif dalam konteks perlombaan tersebut.</p>
+            </div>
+            <div class="col-6">
+              <img src="img/lks.png" alt="">
+            </div>
+          </div>
+
+          <hr>
+
+          <div class="row pb-3 pt-3">
+            <div class="col-6">
+              <img src="img/rpg.png" alt="">
+            </div>
+            <div class="col-6">
+              <h3>RPG ADVENTURE</h3>
+              <p>/ Game RPG Adventure ini dibuat dengan tujuan untuk dipamerkan dalam acara pameran sekolah. Saya mengembangkan game ini menggunakan Godot Game Engine dengan bahasa pemrograman C++. Game ini menawarkan petualangan yang menarik dan menantang, dengan fitur-fitur RPG yang memungkinkan pemain untuk menjelajahi dunia fantasi yang menakjubkan.</p>
+            </div>
+          </div>
+
+          <hr>
+
+          <div class="row pb-3 pt-3">
+            <div class="col-6">
+              <h3>MANAGEMENT BUKU</h3>
+              <p>/ Dengan pengetahuan tentang framework Laravel, saya dapat merancang dan membangun sistem manajemen
+                buku yang efisien dan mudah digunakan. Sistem ini akan memungkinkan Anda untuk mengelola daftar buku,
+                termasuk informasi seperti judul, pengarang,dan kategori. Saya dapat mengimplementasikan fitur-fitur
+                seperti penambahan, pengeditan, dan penghapusan data buku. Selain itu, saya juga dapat menambahkan fitur
+                lain seperti peminjaman,dan pengembalian.</p>
+            </div>
+            <div class="col-6">
+              <img src="img/management buku.png" alt="">
+            </div>
+          </div>
+
+          <hr>
+
+          <!--hard ware-->
+
+
+          <div class="row pb-5 pt-5">
+            <div class="col-4">
+
+            </div>
+            <div class="col-4">
+              <h2 class="text-center">HARDWARE</h2>
+            </div>
+            <div class="col-4">
+
+            </div>
+          </div>
+
+          <div class="row pb-3 pt-3">
+            <div class="col-6">
+              <img src="img/laptopku.png" alt="">
+            </div>
+            <div class="col-6">
+              <h3>PENINGKATAN PERANGKAT KERAS</h3>
+              <p>/ Saya memiliki keahlian khusus dalam melakukan peningkatan perangkat keras pada laptop. Saya dapat
+                membantu meningkatkan kinerja laptop dengan mengganti atau menambah komponen seperti RAM, penyimpanan .
+              </p>
+            </div>
+          </div>
+
+          <hr>
+
+          <div class="row pb-3 pt-3">
+            <div class="col-6">
+              <h3>TROUBLESHOOTING LAPTOP</h3>
+              <p>/ Dalam melakukan troubleshooting, saya dapat mengidentifikasi dan memperbaiki masalah yang berkaitan
+                dengan keyboard, touchpad, atau perangkat input lainnya. Saya dapat melakukan pemeriksaan menyeluruh
+                terhadap perangkat keras dan perangkat lunak terkait, serta menerapkan solusi yang tepat untuk
+                memulihkan fungsi input yang normal.</p>
+            </div>
+            <div class="col-6">
+              <img src="img/laptopbrili.png" alt="">
+            </div>
+          </div>
+
+          <hr>
+
+          <div class="row pb-3 pt-3">
+            <div class="col-6">
+              <img src="img/hpku.png" alt="">
+            </div>
+            <div class="col-6">
+              <h3>TROUBLESHOOTING HANDPHONE</h3>
+              <p>/ Dalam melakukan penggantian, saya dapat membongkar perangkat dengan hati-hati, memasang LCD yang
+                baru, dan menghubungkannya dengan komponen lainnya. Saya memahami langkah-langkah teknis yang diperlukan
+                dan mengikuti prosedur yang benar untuk memastikan penggantian LCD dilakukan dengan aman dan akurat.</p>
+            </div>
+          </div>
+
+          <hr>
+
+          <div class="row pb-3 pt-3">
+            <div class="col-6">
+              <h3>PEMELIHARAAN PERANGKAT KERAS</h3>
+              <p>/ Dalam hal ini, saya dapat melakukan tindakan preventif dan perawatan rutin pada komponen fisik
+                laptop, termasuk membersihkan debu, memeriksa koneksi kabel, mengganti thermal paste, dan memastikan
+                semua bagian berfungsi dengan baik.</p>
+            </div>
+            <div class="col-6">
+              <img src="img/kipas.png" alt="">
+            </div>
+          </div>
+
+          <hr>
+
+          <div class="row pb-3 pt-3">
+            <div class="col-6">
+              <img src="img/rakit pc.png" alt="">
+            </div>
+            <div class="col-6">
+              <h3>MERAKIT PC</h3>
+              <p>/ Dalam proses ini, saya dapat menggabungkan berbagai komponen perangkat keras, seperti motherboard,
+                prosesor, RAM, kartu grafis, penyimpanan, dan lainnya, untuk membentuk sistem komputer yang berfungsi.
+                Saya memahami koneksi dan pengaturan yang benar untuk setiap komponen, termasuk pemasangan kabel dan
+                pendingin CPU. Selain itu, saya juga dapat melakukan konfigurasi awal BIOS dan instalasi sistem operasi.
+              </p>
+            </div>
+          </div>
+
+          <hr>
+
+          <div class="row pb-3 pt-3">
+            <div class="col-6">
+              <h3>DUINO-COIN</h3>
+              <p>/ Duino Coin adalah kriptocurrency yang dikembangkan khusus untuk perangkat mikrokontroler seperti
+                ESP8266. Dengan pengetahuan tentang pemrograman dan penggunaan ESP8266, saya dapat merancang dan
+                membangun perangkat yang dapat melakukan penambangan (mining) Duino Coin. Saya dapat menghubungkan
+                ESP8266 dengan jaringan Internet, mengonfigurasi dan memprogramnya untuk melakukan penambangan Duino
+                Coin dengan menggunakan algoritma yang sesuai.</p>
+            </div>
+            <div class="col-6">
+              <img src="img/duinocoin.png" alt="">
+            </div>
+          </div>
+
+          <hr>
+
+          <div class="row pb-3 pt-3">
+            <div class="col-6">
+              <img src="img/repeater.png" alt="">
+            </div>
+            <div class="col-6">
+              <h3>REPEATER</h3>
+              <p>/ saya dapat merancang dan membangun perangkat yang berfungsi sebagai repeater atau penguat sinyal
+                Wi-Fi. Dalam proses ini, saya dapat mengkonfigurasi ESP8266 untuk berfungsi sebagai titik akses (access
+                point) yang menerima sinyal Wi-Fi dari router utama, lalu memperluas jangkauannya dengan mengirimkan
+                kembali sinyal yang diperkuat ke perangkat lain di sekitarnya.</p>
+            </div>
+          </div>
+
+          <hr>
+
+          <div class="row pb-3 pt-3">
+            <div class="col-6">
+              <h3>RELAY V4.0 ESP01S</h3>
+              <p>/ Dengan pengetahuan tentang penggunaan dan pemrograman ESP01S, saya dapat merancang dan membangun
+                sistem yang memanfaatkan modul Relay V4.0 untuk mengendalikan lampu dengan sinyal jarak jauh. Saya dapat
+                menghubungkan ESP01S dengan jaringan Wi-Fi dan mengatur komunikasi dengan perangkat pengendali, seperti
+                ponsel cerdas atau komputer, melalui aplikasi atau antarmuka yang sesuai.</p>
+            </div>
+            <div class="col-6">
+              <img src="img/relay (1).png" alt="">
+            </div>
+          </div>
+
+          <hr>
+
+          <div class="row pb-3 pt-3">
+            <div class="col-6">
+              <img src="img/rfidd.png" alt="">
+            </div>
+            <div class="col-6">
+              <h3>RFID-RC522</h3>
+              <p>/ Dengan pengetahuan tentang penggunaan dan pemrograman RFID-RC522, saya dapat merancang dan membangun
+                sistem yang memanfaatkan modul RFID untuk mengendalikan lampu. Saya dapat mengintegrasikan RFID-RC522
+                dengan sistem pengendalian lampu yang sesuai, sehingga ketika kartu RFID yang terdaftar didekatkan,
+                lampu dapat dinyalakan. Saya juga dapat melakukan konfigurasi dan pemrograman yang diperlukan untuk
+                mengatur interaksi antara RFID-RC522, sistem kontrol, dan lampu. </p>
+            </div>
+          </div>
+
+          <hr>
+
+          <div class="row pb-3 pt-3">
+            <div class="col-6">
+              <h3>RJ45</h3>
+              <p>Dalam proses ini, saya dapat melakukan pemotongan, pengupasan, dan penjepitan kabel dengan presisi
+                untuk menciptakan koneksi yang handal dan stabil. Saya juga memahami standar pengkabelan seperti T568A
+                dan T568B untuk memastikan kesesuaian dengan infrastruktur jaringan yang ada.</p>
+            </div>
+            <div class="col-6">
+              <img src="img/rj45.png" alt="">
+            </div>
+          </div>
+
+          <hr>
+
+          <div class="row pb-3 pt-3">
+            <div class="col-6">
+              <img src="img/rasbery pi3.png" alt="">
+            </div>
+            <div class="col-6">
+              <h3>RASPBERRY PI 3B</h3>
+              <p>/ Saya dapat memprogram Raspberry Pi 3 untuk mengendalikan sinyal input dan output yang terhubung
+                dengan flip flop, sehingga menciptakan fungsi penyimpanan data yang dapat digunakan dalam berbagai
+                aplikasi elektronik.</p>
+            </div>
+          </div>
+
+          <!--btnn-->
+
+          <div class="row pt-5">
+            <div class="col-11"></div>
+            <div class="col-1">
+              <a href="#skills" class="text-decoration-none">
+                <span class="material-symbols-outlined text-light">
+                  keyboard_double_arrow_right
+                </span>
+                <span class="material-symbols-outlined text-light">
+                  keyboard_double_arrow_right
+                </span>
               </a>
-
-              
             </div>
           </div>
 
         </div>
 
-      </section>
+      </div>
+    </section>
 
-    </div>
+    <!--slide_3-->
+    <section id="skills">
+      <div class="container">
 
-  </body>
+        <div class="row">
+          <div class="col-4 pt-5">
+            <h3>FRONT-END</h3>
+            <hr>
+            <p class="pb-5">HTML | CSS | BOOTSTRAP</p>
+
+            <h3>DATA-BASE</h3>
+            <hr>
+            <p class="pb-5">My SQL</p>
+
+            <h3>LANGUAGE</h3>
+            <hr>
+            <p class="pb-5">PHYTON | JAVA | JAVA SCRIPT | C++ | PHP</p>
+
+          </div>
+
+          <div class="col-4 text-center techstack d-block">
+            <img src="img/globee.png" alt="">
+            <h5>TECH STACK OR TOOLS</h5>
+          </div>
+
+          <div class="col-4 pt-5">
+            <h3>FRAMEWORKS</h3>
+            <hr>
+            <p class="pb-5">/ LARAVEL</p>
+
+            <h3>OS</h3>
+            <hr>
+            <p class="pb-5">/ LinUx Ubuntu .</p>
+
+            <h3>OTHER</h3>
+            <hr>
+            <p class="pb-5">AWS CLOUDE | ETHERIUM | DUINO-COIN | JUPYTER NOTEBOOKS | DATA SCIENCE</p>
+
+          </div>
+
+
+        </div>
+
+
+      </div>
+
+
+    </section>
+
+    <!--slide_4-->
+    <section id="contact">
+      <div class="container">
+        <h1>LET'S TALK ABOUT THE PROJECT?</h1>
+        <hr>
+
+        <div class="row">
+          <div class="col-4">
+            <h3 class="pb-4">WANNA SEE ME IN OTHER PLECES ?</h3>
+            <p><a href="https://www.instagram.com/iqbal_9q21l/">INSTAGRAM</a></p>
+            <hr>
+            <p><a href="#">TWITER</a></p>
+            <hr>
+            <p><a href="https://www.youtube.com/@emperorbijisalak7264">YOU TUBE</a></p>
+          </div>
+
+          <div class="col-4 globe">
+            <img src="img/globe.png" alt="">
+          </div>
+
+          <div class="col-4">
+            <h3 class="pb-4">DROP ME AN EMAIL</h3>
+            <hr>
+            <p><a href="">EMAIL : maulanaiqbal47758@gmail.com</a></p>
+
+
+            <a href="CV-Iqballlll.pdf" download>
+              <button type="button" class="btn btn-dark">
+                Download CV
+              </button>
+            </a>
+
+
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+  </div>
+
+</body>
 
 </html>
