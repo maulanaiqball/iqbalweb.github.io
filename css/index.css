@@ -189,7 +189,13 @@ section {
 
 @media screen and (max-width: 600px) {
     h1 {
-        font-size: 4rem;
+        font-size: 2.8rem;
+    }
+
+
+
+    p {
+        font-size: 0.8rem;
     }
 
     body::-webkit-scrollbar {
